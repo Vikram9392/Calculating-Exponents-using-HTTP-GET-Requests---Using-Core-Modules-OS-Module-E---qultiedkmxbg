@@ -20,7 +20,7 @@ const server = http.createServer((req, res) => {
       else{
        const result= Math.pow(value1,value2)
         res.writeHead(200,{'content-Type':'text/plain'})
-        res.send(`The result is ${result}`)
+        res.end(`The result is ${result}`)
         }
         
     });
