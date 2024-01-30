@@ -18,11 +18,10 @@ const server = http.createServer((req, res) => {
         res.end("The operation cannot be performed")
       }
       else{
-        Math.pow(value1,value2)
         res.writeHead(200,{'content-Type':'text/plain'})
         res.send(`The result is ${result}`)
         }
-     
+        Math.pow(value1,value2)
     });
     }
 });
