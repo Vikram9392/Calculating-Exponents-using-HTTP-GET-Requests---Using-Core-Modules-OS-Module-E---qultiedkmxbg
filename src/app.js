@@ -14,13 +14,15 @@ const server = http.createServer((req, res) => {
 
       // Write code here to calculate power of a number
       if(parseInt(value1)<1||parseInt(value2)<0){
-        res.writeHead(404,{'content-type':'text/plain'});
+        res.writeHead(404,{'content-Type':'text/plain'});
         res.end("The operation cannot be performed")
       }
-      Math.pow(value1,value2)
-      res.writeHead(200,{'content-type':'text/plain'})
-      res.send(`The result is ${result}`)
-      
+      else{
+        Math.pow(value1,value2)
+        res.writeHead(200,{'content-Type':'text/plain'})
+        res.send(`The result is ${result}`)
+        }
+     
     });
     }
 });
